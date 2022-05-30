@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
     <link href="index.css" rel="stylesheet">
     <title>Market List</title>
-    
 </head>
 <body>
 
@@ -16,26 +17,29 @@
     </header>
     <!--/MENU-->
 
-    <!--CADASTRO-->
-    <div class="lista-cadastro">
-        <input type="text" placeholder="Nome do produto..." 
-        name="nome_produto" />
-        <input type="number" placeholder="Valor do produto..." 
-        name="valor_produto" step="0.01">
-        <input type="submit" name="acao" value="+">
-    </div><hr>
-    <!--/CADASTRO-->
-    
-    <!--PRODUTOS-->
-    <div class="lista-produtos">
-    </div>
-    <!--/PRODUTOS-->
+    <div class="main">
+        <!--CADASTRO-->
+        <div class="lista-cadastro">
+            <input type="text" placeholder="Nome do produto..." 
+            name="nome_produto" />
+            <input type="number" placeholder="Valor do produto..." 
+            name="valor_produto" step="0.01">
+            <input type="submit" name="acao" value="+">
+        </div><hr>
+        <!--/CADASTRO-->
 
-    <!--TOTAL-->
-    <div class="soma-produtos">
-        <h1>Total: R$ 0</h1>
+        <!--PRODUTOS-->
+        <div class="lista-produtos">
+        </div>
+        <!--/PRODUTOS-->
+
+        <!--TOTAL-->
+        <div class="soma-produtos">
+            <h1>Total: R$ 0</h1>
+        </div>
+        <!--/TOTAL-->
     </div>
-    <!--/TOTAL-->
+   
 
     <script src="supermercado.js"></script>
 </body>
