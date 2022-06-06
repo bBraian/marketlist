@@ -1,13 +1,12 @@
 var itens = [];
 
-document.querySelector('input[type=submit]')
-.addEventListener('click', ()=>{
-    var nomeProduto = document.querySelector('input[name=nome_produto]');
-    var precoProduto = document.querySelector('input[name=valor_produto]');
+$('#btn_add').on('click', ()=>{
+    var nomeProduto = $('#nome_produto');
+    var precoProduto = $('#valor_produto');
 
     itens.push({
-        nome: nomeProduto.value,
-        valor: precoProduto.value
+        nome: nomeProduto.val(),
+        valor: precoProduto.val()
     });
 
     let listaProdutos = document.querySelector('.lista-produtos');
@@ -26,10 +25,14 @@ document.querySelector('input[type=submit]')
     })
 
     soma = soma.toFixed(2);
-    nomeProduto.value = "";
-    precoProduto.value = "";
+    nomeProduto.val("");
+    precoProduto.val("");
 
-    let elementoSoma = document.querySelector('.soma-produtos h1');
-    elementoSoma.innerHTML = 'R$ '+soma;
+    let elementoSoma = $('.soma-produtos h1');
+    elementoSoma.html('R$ '+soma);
 
 });
+
+function validaInputs() {
+
+}

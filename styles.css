@@ -37,7 +37,7 @@ input {
 
 .lista-cadastro input[type=submit]{
     border-radius: 20px;
-    padding: 0 20px;
+    width: 40px;
     border: 1px solid black;
     cursor: pointer;
     margin: 0 10px;
